@@ -15,5 +15,5 @@ Tasked: to send POST-requests to register new users.
 Tasked: make sure information in response has all required fields.
 <p> Done: </p>
 <p> - create GET-request </p>
-<p> - defined an auto-test to check response (fields existing, 3 runs, delay - according to task); </p>
+<p> - defined auto-tests (3 runs, delay 1000 ms) to check: 1. All fields exist; 2. Avatar image exists. </p>
 <p> - conducted a run </p>
