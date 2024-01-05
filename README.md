@@ -17,3 +17,10 @@ Tasked: make sure information in response has all required fields.
 <p> - create GET-request </p>
 <p> - defined auto-tests (3 runs, delay 1000 ms) to check: 1. All fields exist; 2. Avatar image exists. </p>
 <p> - conducted a run </p>
+
+## Task 3
+Tasked: make sure information in response has been updated.
+<p> Done: </p>
+<p> - create PATCH-request </p>
+<p> - defined auto-tests to check: 1. Update field exists; 2. Update field was updated. </p>
+<p> - conducted a run </p>
