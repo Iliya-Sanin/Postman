@@ -1,0 +1,19 @@
+// Assuming the response body is stored in a variable called 'responseBody'
+var jsonData = pm.response.json();
+
+// Check if 'data' array exists
+pm.test("Check if 'data' array exists", function () {
+    pm.expect(jsonData).to.have.property('data').that.is.an('array');
+});
+
+// Iterate over each user in the 'data' array
+jsonData.data.forEach(function(user) {
+    // Test for required fields in each user
+    pm.test("User has required fields", function () {
+        pm.expect(user).to.have.property('id');
+        pm.expect(user).to.have.property('email');
+        pm.expect(user).to.have.property('first_name');
+        pm.expect(user).to.have.property('last_name');
+        pm.expect(user).to.have.property('avatar');
+    });
+});
