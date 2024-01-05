@@ -14,5 +14,6 @@ Tasked: to send POST-requests to register new users.
 ## Task 2
 Tasked: make sure information in response has all required fields.
 <p> Done: </p>
-<p> - defined an auto-test to check response (according to documentation); </p>
+<p> - create GET-request </p>
+<p> - defined an auto-test to check response (fields existing, 3 runs, delay - according to task); </p>
 <p> - conducted a run </p>
