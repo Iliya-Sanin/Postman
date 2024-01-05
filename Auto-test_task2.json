@@ -1,0 +1,117 @@
+{
+	"id": "e8c4681a-a4ee-4d58-9b7a-52ac9e8372af",
+	"name": "Reqres",
+	"timestamp": "2024-01-05T01:47:03.475Z",
+	"collection_id": "25936339-810fd24c-4530-4959-a8fe-2704e6cdf3fa",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 39,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-05T01:47:00.126Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5c264281-6b92-40f3-9b2e-228eb81d41de",
+			"name": "users_all",
+			"url": "https://reqres.in/API/users?page=2",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check if 'data' array exists": true,
+				"User has required fields": true,
+				"Avatar URL for user 1 is a valid image URL": true,
+				"Avatar URL for user 2 is a valid image URL": true,
+				"Avatar URL for user 3 is a valid image URL": true,
+				"Avatar URL for user 4 is a valid image URL": true,
+				"Avatar URL for user 5 is a valid image URL": true,
+				"Avatar URL for user 6 is a valid image URL": true
+			},
+			"testPassFailCounts": {
+				"Check if 'data' array exists": {
+					"pass": 3,
+					"fail": 0
+				},
+				"User has required fields": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Avatar URL for user 1 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Avatar URL for user 2 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Avatar URL for user 3 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Avatar URL for user 4 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Avatar URL for user 5 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Avatar URL for user 6 is a valid image URL": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				31,
+				22,
+				23
+			],
+			"allTests": [
+				{
+					"Check if 'data' array exists": true,
+					"User has required fields": true,
+					"Avatar URL for user 1 is a valid image URL": true,
+					"Avatar URL for user 2 is a valid image URL": true,
+					"Avatar URL for user 3 is a valid image URL": true,
+					"Avatar URL for user 4 is a valid image URL": true,
+					"Avatar URL for user 5 is a valid image URL": true,
+					"Avatar URL for user 6 is a valid image URL": true
+				},
+				{
+					"Check if 'data' array exists": true,
+					"User has required fields": true,
+					"Avatar URL for user 1 is a valid image URL": true,
+					"Avatar URL for user 2 is a valid image URL": true,
+					"Avatar URL for user 3 is a valid image URL": true,
+					"Avatar URL for user 4 is a valid image URL": true,
+					"Avatar URL for user 5 is a valid image URL": true,
+					"Avatar URL for user 6 is a valid image URL": true
+				},
+				{
+					"Check if 'data' array exists": true,
+					"User has required fields": true,
+					"Avatar URL for user 1 is a valid image URL": true,
+					"Avatar URL for user 2 is a valid image URL": true,
+					"Avatar URL for user 3 is a valid image URL": true,
+					"Avatar URL for user 4 is a valid image URL": true,
+					"Avatar URL for user 5 is a valid image URL": true,
+					"Avatar URL for user 6 is a valid image URL": true
+				}
+			]
+		}
+	],
+	"count": 3,
+	"totalTime": 76,
+	"collection": {
+		"requests": [
+			{
+				"id": "5c264281-6b92-40f3-9b2e-228eb81d41de",
+				"method": "GET"
+			}
+		]
+	}
+}
