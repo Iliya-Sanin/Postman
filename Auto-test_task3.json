@@ -1,0 +1,22 @@
+// Assuming the response body is stored in a variable called 'responseBody'
+var jsonData = pm.response.json();
+
+// Get the previous 'updatedAt' value from the environment or global variables
+var previousUpdatedAt = pm.environment.get('previousUpdatedAt');
+
+// Test if 'updatedAt' exists in the response
+pm.test("Check if 'updatedAt' property exists", function () {
+    pm.expect(jsonData).to.have.property('updatedAt');
+});
+
+// Test if 'updatedAt' is greater than the previous value
+pm.test("Check if 'updatedAt' is updated", function () {
+    pm.expect(jsonData.updatedAt).to.be.a('string');
+
+    if (previousUpdatedAt) {
+        pm.expect(new Date(jsonData.updatedAt).getTime()).to.be.greaterThan(new Date(previousUpdatedAt).getTime());
+    }
+
+    // Update the environment variable with the current 'updatedAt' value
+    pm.environment.set('previousUpdatedAt', jsonData.updatedAt);
+});

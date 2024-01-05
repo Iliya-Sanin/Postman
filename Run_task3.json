@@ -1,0 +1,59 @@
+{
+	"id": "74c35e27-c973-46fc-be07-c450196e107d",
+	"name": "Reqres",
+	"timestamp": "2024-01-05T02:20:47.107Z",
+	"collection_id": "25936339-810fd24c-4530-4959-a8fe-2704e6cdf3fa",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-05T02:20:46.732Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1fcd520a-9c1f-4e2d-b291-d78953fd27c7",
+			"name": "update_patch",
+			"url": "https://reqres.in/API/users/2",
+			"time": 194,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check if 'updatedAt' property exists": true,
+				"Check if 'updatedAt' is updated": true
+			},
+			"testPassFailCounts": {
+				"Check if 'updatedAt' property exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if 'updatedAt' is updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Check if 'updatedAt' property exists": true,
+					"Check if 'updatedAt' is updated": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 194,
+	"collection": {
+		"requests": [
+			{
+				"id": "1fcd520a-9c1f-4e2d-b291-d78953fd27c7",
+				"method": "PATCH"
+			}
+		]
+	}
+}
